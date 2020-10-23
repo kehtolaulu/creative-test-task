@@ -1,0 +1,56 @@
+.card {
+  border: 1px solid rgba(0, 0, 0, .125);
+  padding: 10px 25px 26px 25px;
+  margin: 10px;
+  border-radius: 0.25rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.button {
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.dislike-button {
+  background: url('/favorite-black-18dp.svg') no-repeat;
+  background-size: 100%;
+}
+
+.like-button {
+  background: url('/favorite_border-black-18dp.svg') no-repeat;
+  background-size: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+@media (max-width: 641px) {
+  .button {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+}
+
+@media (min-width: 320px) {
+  .card {
+    margin: 5px;
+    padding: 5px 15px 20px 15px;
+  }
+  .button {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}

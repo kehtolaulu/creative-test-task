@@ -1,0 +1,14 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+@media (max-width: 320px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  .card {
+    margin: 5px;
+  }
+}
